@@ -1,18 +1,34 @@
-## d3-arcade fixed by thedailydenny
-# HEAVILY based on [rcore_arcade](https://github.com/Xogy/rcore_arcade)
+# d3-arcade (Qbox + ox_target Fix)
 
-Qbox Arcade System
+A retro arcade system for GTA V, based on the original [rcore_arcade](https://github.com/Xogy/rcore_arcade) and heavily modified for modern frameworks.
 
-This fork features small upgrades and framework dependent changes to improve on the original rcore_arcade.
+---
 
-The emulatorjs integration has been PRd to the original rcore_arcade! I will strive to add to the original wherever possible, however, this is a Qbox specific resource which means
-some if not most of the incoming changes will not work with the original, which is developed as a standalone/esx script.
+### 🛠 Credits & Contributions
+* **Original Concept:** [rcore_arcade](https://github.com/Xogy/rcore_arcade) by Xogy.
+* **Qbox Version & Logic:** [d3st1nyh4x](https://github.com/d3st1nyh4x) (Author of this specific fork).
+* **Fix & Compatibility:** **thedailydenny** (Updated for Qbox + ox_target integration).
 
-I'll add some documentation of the config, however it's pretty straight forward.
+---
 
-There are 3 types of machines, RetroMachine, GamingMachine and SuperMachine.
-the above mentioned values correspond to lists of games, where supermachine is an aggregate (combination of) RetroMachine and GamingMachine.
-There are comments on the config on how to add new games, but it boils down to selecting a page (dos or ejs), and filling the appropiate query parameters:
+### 📝 About This Fork
+This version is specifically tailored for the **Qbox Project** ecosystem. It bridges the gap between the standalone/ESX logic of the original script and the high-performance requirements of Qbox.
+
+**Key Changes in this Fix:**
+* **Framework Dependency:** Fully converted to Qbox-specific functions.
+* **Interaction System:** Replaced markers/3D text with **ox_target** for better performance and a cleaner UI.
+* **EmulatorJS Integration:** Includes the PR for emulatorjs, allowing real ROMs to be played in-game.
+
+---
+
+### 🕹 Machine Types
+You can define three categories of arcade machines in the config:
+1.  **RetroMachine:** Classic 8-bit/16-bit titles.
+2.  **GamingMachine:** More modern emulated experiences.
+3.  **SuperMachine:** An aggregate list containing all available games.
+
+### ⚙ Game Configuration
+Adding games is straightforward. Choose between **DOSBOX** or **EJS** (EmulatorJS) and fill in the parameters:
 
 DOSBOX:
 ```
