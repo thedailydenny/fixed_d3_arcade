@@ -1,11 +1,11 @@
-## d3-arcade
+## d3-arcade fixed by thedailydenny
 # HEAVILY based on [rcore_arcade](https://github.com/Xogy/rcore_arcade)
 
-QBCore Arcade System
+Qbox Arcade System
 
 This fork features small upgrades and framework dependent changes to improve on the original rcore_arcade.
 
-The emulatorjs integration has been PRd to the original rcore_arcade! I will strive to add to the original wherever possible, however, this is a QBCore specific resource which means
+The emulatorjs integration has been PRd to the original rcore_arcade! I will strive to add to the original wherever possible, however, this is a Qbox specific resource which means
 some if not most of the incoming changes will not work with the original, which is developed as a standalone/esx script.
 
 I'll add some documentation of the config, however it's pretty straight forward.
@@ -37,15 +37,7 @@ CPU/GPU, what do they do?
 the cpu determines how long the initial loading bar lasts<br>
 the gpu determines the resolution of the screen
 
-TODO:
-- [x] QB-Target integration to allow all arcade machines to work
-- [x] Freeze Player to allow gamepad use without punching and moving in GTA
-- [x] Add some animations to show player is using arcade machine / computer
-
-KNOWN ISSUES:
-
-UI button to load state will softlock the game requiring an F8 quit.<br>
-Gamepad controls character in GTA and emulator at the same time.
+Works on QBOX + OX Target
 
 MISC:
 
@@ -53,5 +45,5 @@ MISC:
 
 Dependencies
 
-QB-Target<br>
-https://github.com/d3st1nyh4x/MenuAPI (fork fixed for large lists)
+OX_target<br>
+[https://github.com/d3st1nyh4x/MenuAPI (fork fixed for large lists)](https://github.com/overextended/ox_target)
